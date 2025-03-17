@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <button class="home-btn" onclick="goHome()">Home</button>
+      <input type="text" id="searchBar" placeholder="Search apps..." oninput="searchApps()">
+    </div>
+  </header>
+
+  <div class="filters">
+    <button onclick="filterApps('Rights/Diversity/Equality')">Rights/Diversity/Equality</button>
+    <button onclick="filterApps('Science')">Science</button>
+  </div>
+
+  <div id="app-list" class="app-list">
+    <!-- Apps will be loaded dynamically here -->
+  </div>
+
+  <footer>
+    <p>Powered by Your App Store</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
